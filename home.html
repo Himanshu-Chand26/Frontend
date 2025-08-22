@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Change Awareness</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f9f4;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e3d59;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffd460;
+    }
+
+    .chatbot-btn {
+      background: #ff6e40;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .chatbot-btn:hover {
+      background: #ff5722;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      color: white;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Card Section */
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      padding: 20px;
+      margin: 20px;
+      flex: 1 1 300px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1e3d59;
+    }
+
+    /* Footer */
+    footer {
+      background: #1e3d59;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">🌍 Climate Action</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#impacts">Impacts</a></li>
+      <li><a href="#emission">Emission</a></li>
+    </ul>
+    <button class="chatbot-btn" onclick="openChatbot()">Chatbot</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Together for a Greener Future</h1>
+    <p>Climate change is one of the biggest challenges of our time. 
+       Rising emissions, shifting weather patterns, and ecological disruptions 
+       threaten our planet. But with awareness, innovation, and action, 
+       we can fight back.</p>
+  </section>
+
+  <!-- Info Cards -->
+  <section class="cards">
+    <div class="card" id="impacts">
+      <h3>🌡️ Impacts</h3>
+      <p>Melting glaciers, frequent floods, stronger hurricanes, and 
+         rising sea levels are warning signs of an overheating Earth.</p>
+    </div>
+
+    <div class="card" id="emission">
+      <h3>💨 Emissions</h3>
+      <p>Fossil-fuel-based energy contributes to the majority of greenhouse gases. 
+         Renewable energy and clean tech can cut emissions drastically.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤝 What You Can Do</h3>
+      <p>Save energy, plant trees, reduce waste, and support clean energy. 
+         Every action counts in building a sustainable future.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Climate Action Project | Built with 🌱 and ❤️</p>
+  </footer>
+
+  <script>
+    function openChatbot() {
+      window.location.href = "chatbot.html"; // Replace with your chatbot page link
+    }
+  </script>
+</body>
+</html>
